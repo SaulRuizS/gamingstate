@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACGA,AAAA,CAAC,CAAC;EACD,UAAU,EAAE,UAAU;EACtB,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;CACZ;;AAED,AAAA,IAAI,CAAC;EACJ,SAAS,EAAE,KAAK;CAChB;;ACXD,AAAA,MAAM,CAAC;EACN,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,KAAK;CACvB;;ACJD,AAAA,IAAI,CAAC;EACJ,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,gBAAgB,EFHJ,OAAO;CEInB;;ACJD,AAAA,MAAM,CAAC;EACN,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,KAAK;CACvB",
+    "sources": [
+        "gaming-state.scss",
+        "components/_global.scss",
+        "components/_header.scss",
+        "components/_main.scss",
+        "components/_footer.scss"
+    ],
+    "names": [],
+    "file": "gaming-state.css"
+}
