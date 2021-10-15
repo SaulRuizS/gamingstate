@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Oswald:wght@200;500;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,25 +6,120 @@
   padding: 0px;
 }
 
+html,
 body {
   font-size: 62.5%;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-header {
+.header-mainpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 90px;
-  width: 100%;
-  background-color: coral;
+  width: 100vw;
+  background-color: #f9fafc;
+}
+
+.header-mainpage .header-mainpage__logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  margin-left: 10px;
+  z-index: 3;
+}
+
+.header-mainpage .header-mainpage__logo-container img {
+  height: 60px;
+  width: 250px;
+}
+
+.header-mainpage .header-mainpage__menu-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  position: absolute;
+  left: calc(100% - 50px);
+  z-index: 2;
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png");
+}
+
+.header-mainpage input {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.header-mainpage input[type="checkbox"] {
+  opacity: 0;
+}
+
+.header-mainpage input[type="checkbox"]:checked ~ .header-mainpage__navbar {
+  visibility: visible;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.header-mainpage .header-mainpage__navbar {
+  width: 100vw;
+  position: absolute;
+  margin-top: 370px;
+  visibility: hidden;
+  background-color: #f9fafc;
+}
+
+.header-mainpage .header-mainpage__navbar ul {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.header-mainpage .header-mainpage__navbar ul li {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.header-mainpage .header-mainpage__navbar ul li a {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #424651;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header-mainpage .header-mainpage__navbar .header-mainpage__search {
+  font-size: 2.6rem;
+  color: #ff8c42;
 }
 
 main {
   height: 100vh;
   width: 100%;
-  background-color: #f9fafc;
+  background-color: #ff8c42;
 }
 
 footer {
   height: 150px;
   width: 100%;
-  background-color: coral;
+  background-color: #424651;
 }
 /*# sourceMappingURL=gaming-state.css.map */

@@ -9,17 +9,43 @@
     <title>GamingState</title>
 </head>
 <body>
-    <header>
-        <div><img src="./assets/images/gamingstate-logo.png" alt="gaming-state-logo"></div>
-        <nav>
+    <header class="header-mainpage">
+        <div class="header-mainpage__logo-container">
+            <img src="./assets/images/gamingstate-logo.png" alt="gaming-state-logo">
+        </div>
+        <input type="checkbox" id="menu">
+        <div class="header-mainpage__menu-icon"></div>
+        <!-- <input type="checkbox" id="menu"> -->
+        <nav class="header-mainpage__navbar">
             <ul>
-                <li>Playstation</li>
-                <li>Xbox</li>
-                <li>Nintendo</li>
-                <li>PC</li>
-                <li>Mobile</li>
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="">Playstation</a></li>
+                <li><a href="">Xbox</a></li>
+                <li><a href="">Nintendo</a></li>
+                <li><a href="">PC</a></li>
+                <li><a href="">Mobile</a></li>
+                <li>
+                    <a class="header-mainpage__search" href="./search-results.html">
+                        <span></span>
+                        Search
+                    </a>
+                </li>
             </ul>
         </nav>
+            <!-- <details>
+                <summary class="header-mainpage__menu-icon"></summary>
+                <nav class="header-mainpage__navbar">
+                    <ul>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="">Playstation</a></li>
+                        <li><a href="">Xbox</a></li>
+                        <li><a href="">Nintendo</a></li>
+                        <li><a href="">PC</a></li>
+                        <li><a href="">Mobile</a></li>
+                    </ul>
+                    <a class="header-mainpage__search" href="./search-results.html"><span></span>Search</a>
+                </nav>
+            </details> -->
     </header>
     <main>
 
