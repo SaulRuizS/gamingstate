@@ -25,7 +25,10 @@ body {
           justify-content: space-between;
   height: 90px;
   width: 100vw;
+  z-index: 4;
   background-color: #f9fafc;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2.6px;
 }
 
 .header-mainpage .header-mainpage__logo-container {
@@ -46,6 +49,12 @@ body {
 .header-mainpage .header-mainpage__logo-container img {
   height: 60px;
   width: 250px;
+}
+
+.header-mainpage .header-mainpage__logo-container a {
+  height: 60px;
+  width: 250px;
+  position: absolute;
 }
 
 .header-mainpage .header-mainpage__menu-icon {
@@ -72,10 +81,6 @@ body {
 
 .header-mainpage input[type="checkbox"]:checked ~ .header-mainpage__navbar {
   visibility: visible;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
 }
 
 .header-mainpage .header-mainpage__navbar {
@@ -84,6 +89,8 @@ body {
   margin-top: 370px;
   visibility: hidden;
   background-color: #f9fafc;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2.6px;
 }
 
 .header-mainpage .header-mainpage__navbar ul {
