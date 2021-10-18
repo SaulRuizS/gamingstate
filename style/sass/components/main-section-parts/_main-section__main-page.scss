@@ -1,11 +1,14 @@
 .mainsection-mainpage {
 	display: grid;
 	grid-template-columns: 4% 1fr 4%;
-	grid-template-rows: 420px 500px 270px 500px;
+	grid-template-rows: 420px 20px 460px 30px 270px 40px 500px;
 	grid-template-areas:
 		". highlights ."
+		". . ."
 		". highlighted-news-container ."
+		". . ."
 		". secondary-article ."
+		". . ."
 		". last-article .";
 	height: auto;
 	width: 100%;
@@ -78,32 +81,31 @@
 		width: 100%;
 		height: 100%;
 		display: grid;
-		grid-template-columns: 20% 80%;
-		grid-template-rows: repeat(4, 1fr);
-		background-color: $black-coral;
+		grid-template-rows: auto;
+		background-color: $soft-white;
 
 		&__box {
 			width: 100%;
-			height: 98%;
+			height: 100%;
 			padding: 30px 24px;
-			font-family: "Lato", sans-serif;
-			font-size: 2.2rem;
-			font-weight: 400;
+			display: inline-flex;
 			border-width: 1px;
-			border-color: $black-coral;
+			border-color: $light-gray;
+			border-style: solid;
+			font-family: "Lato", sans-serif;
+			font-size: 2rem;
+			font-weight: 400;
 			border-radius: 8px;
 			color: $black;
 			background-color: $soft-white;
-			grid-column: 1 / 3;
 
-			.number {
-				margin-right: 10px;
-				grid-column: 1 / 2;
+			span {
+				margin-right: 20px;
+				font-weight: 700;
+				color: $black-coral;
 			}
 
 			.link-container {
-				grid-column: 2 / 3;
-
 				a {
 					text-decoration: none;
 					color: $black;
@@ -117,10 +119,6 @@
 			font-weight: 200;
 			text-transform: uppercase;
 		}
-
-		.highlighted-news {
-			// background-color: $soft-white;
-		}
 	}
 
 	.secondary-article {
@@ -128,7 +126,6 @@
 		width: 100%;
 		height: 100%;
 		position: relative;
-		// background-color: $charcoal;
 
 		img {
 			width: 100%;
@@ -166,7 +163,7 @@
 			}
 
 			h2 {
-				padding: 56px 100px 30px 20px;
+				padding: 56px 100px 40px 20px;
 				font-family: "Oswald", sans-serif;
 				font-size: 2.4rem;
 				font-weight: 400;
