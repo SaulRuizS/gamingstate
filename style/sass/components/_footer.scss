@@ -1,5 +1,54 @@
-footer {
-	height: 150px;
+.footer {
+	height: 200px;
 	width: 100%;
+	padding: 30px 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 	background-color: $charcoal;
+
+	.footer__logo-container {
+		height: 80px;
+		width: 80px;
+		img {
+			position: absolute;
+			height: 80px;
+			width: 80px;
+			transform: rotateZ(-26deg);
+		}
+
+		a {
+			position: absolute;
+			height: 80px;
+			width: 80px;
+		}
+	}
+
+	.footer__social-media {
+		width: auto;
+		position: relative;
+		// left: 50%;
+		font-size: 3rem;
+
+		a {
+			// width: 30px;
+			// height: 30px;
+			margin: auto 10px;
+			padding: 7px 40px 0px 0px;
+			background-repeat: no-repeat;
+
+			&:nth-child(1) {
+				background-image: url("../../../assets/images/icon-insta.svg");
+			}
+
+			&:nth-child(2) {
+				background-image: url("../../../assets/images/icon-twitter.svg");
+			}
+
+			&:nth-child(3) {
+				background-image: url("../../../assets/images/icon-face.svg");
+			}
+		}
+	}
 }

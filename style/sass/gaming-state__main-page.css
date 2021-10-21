@@ -376,9 +376,65 @@ body {
   color: #f9fafc;
 }
 
-footer {
-  height: 150px;
+.footer {
+  height: 200px;
   width: 100%;
+  padding: 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #424651;
+}
+
+.footer .footer__logo-container {
+  height: 80px;
+  width: 80px;
+}
+
+.footer .footer__logo-container img {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  -webkit-transform: rotateZ(-26deg);
+          transform: rotateZ(-26deg);
+}
+
+.footer .footer__logo-container a {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+}
+
+.footer .footer__social-media {
+  width: auto;
+  position: relative;
+  font-size: 3rem;
+}
+
+.footer .footer__social-media a {
+  margin: auto 10px;
+  padding: 7px 40px 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.footer .footer__social-media a:nth-child(1) {
+  background-image: url("../../../assets/images/icon-insta.svg");
+}
+
+.footer .footer__social-media a:nth-child(2) {
+  background-image: url("../../../assets/images/icon-twitter.svg");
+}
+
+.footer .footer__social-media a:nth-child(3) {
+  background-image: url("../../../assets/images/icon-face.svg");
 }
 /*# sourceMappingURL=gaming-state__main-page.css.map */
