@@ -431,14 +431,14 @@ body {
 }
 
 .footer .footer__social-media a:nth-child(1) {
-  background-image: url("../../../assets/images/icon-insta.svg");
+  background-image: url("../../../assets/icons/icon-insta.svg");
 }
 
 .footer .footer__social-media a:nth-child(2) {
-  background-image: url("../../../assets/images/icon-twitter.svg");
+  background-image: url("../../../assets/icons/icon-twitter.svg");
 }
 
 .footer .footer__social-media a:nth-child(3) {
-  background-image: url("../../../assets/images/icon-face.svg");
+  background-image: url("../../../assets/icons/icon-face.svg");
 }
 /*# sourceMappingURL=gaming-state__main-page.css.map */
