@@ -28,26 +28,23 @@
 	.footer__social-media {
 		width: auto;
 		position: relative;
-		// left: 50%;
 		font-size: 3rem;
 
 		a {
-			// width: 30px;
-			// height: 30px;
 			margin: auto 10px;
 			padding: 7px 40px 0px 0px;
 			background-repeat: no-repeat;
 
 			&:nth-child(1) {
-				background-image: url("../../../assets/images/icon-insta.svg");
+				background-image: url("../../../assets/icons/icon-insta.svg");
 			}
 
 			&:nth-child(2) {
-				background-image: url("../../../assets/images/icon-twitter.svg");
+				background-image: url("../../../assets/icons/icon-twitter.svg");
 			}
 
 			&:nth-child(3) {
-				background-image: url("../../../assets/images/icon-face.svg");
+				background-image: url("../../../assets/icons/icon-face.svg");
 			}
 		}
 	}
