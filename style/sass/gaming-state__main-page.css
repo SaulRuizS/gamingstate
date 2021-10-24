@@ -139,6 +139,12 @@ body {
   position: relative;
 }
 
+.mainsection-mainpage .highlights .link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .mainsection-mainpage .highlights img {
   width: 100%;
   height: 100%;
