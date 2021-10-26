@@ -117,6 +117,59 @@ body {
   color: #ff8c42;
 }
 
+.article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10px 1fr 10px;
+      grid-template-columns: 10px 1fr 10px;
+  -ms-grid-rows: 200px 10px 200px 10px 200px;
+      grid-template-rows: 200px 10px 200px 10px 200px;
+      grid-template-areas: "article-intro article-intro article-intro" ". . ." ". article-text ." ". . ." ". article-recommendations .";
+}
+
+.article-intro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: article-intro;
+  height: 100%;
+  width: 100%;
+}
+
+.article-intro__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.article-text {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: article-text;
+}
+
+.article-recommendations {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: article-recommendations;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.article-recommendations .article-recommendation {
+  height: 100%;
+  width: 30%;
+}
+
+.article-recommendations .article-recommendation img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .footer {
   height: 200px;
   width: 100%;

@@ -1,0 +1,43 @@
+.article {
+	display: grid;
+	grid-template-columns: 10px 1fr 10px;
+	grid-template-rows: 200px 10px 200px 10px 200px;
+	grid-template-areas:
+		"article-intro article-intro article-intro"
+		". . ."
+		". article-text ."
+		". . ."
+		". article-recommendations .";
+
+	&-intro {
+		grid-area: article-intro;
+		height: 100%;
+		width: 100%;
+
+		&__img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&-text {
+		grid-area: article-text;
+	}
+
+	&-recommendations {
+		grid-area: article-recommendations;
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		.article-recommendation {
+			height: 100%;
+			width: 30%;
+
+			img {
+				object-fit: cover;
+			}
+		}
+	}
+}
