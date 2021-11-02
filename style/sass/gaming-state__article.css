@@ -154,20 +154,24 @@ body {
   -ms-grid-column: 2;
   grid-area: article-recommendations;
   height: 100%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
 }
 
 .article-recommendations .article-recommendation {
-  height: 100%;
-  width: 30%;
+  padding: 5px;
 }
 
 .article-recommendations .article-recommendation img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 60%;
+}
+
+.article-recommendations .article-recommendation__info {
+  height: 40%;
+  background-color: #ff8c42;
 }
 
 .footer {

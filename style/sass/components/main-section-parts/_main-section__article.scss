@@ -25,18 +25,32 @@
 		grid-area: article-text;
 	}
 
+	&-recommendations-area {
+		// width: 100%;
+	}
+
 	&-recommendations {
 		grid-area: article-recommendations;
 		height: 100%;
+		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		// grid-template-columns: repeat(1, 100%);
+		grid-template-rows: repeat(3, 200px);
 
 		.article-recommendation {
-			height: 100%;
-			width: 30%;
+			padding: 5px;
+			// height: 100%;
+			// width: 100%;
 
 			img {
-				object-fit: cover;
+				height: 60%;
+				// width: 100px;
+				// object-fit: cover;
+			}
+
+			&__info {
+				height: 40%;
+				background-color: $mango-tango;
 			}
 		}
 	}
