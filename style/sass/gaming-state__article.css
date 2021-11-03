@@ -122,9 +122,9 @@ body {
   display: grid;
   -ms-grid-columns: 10px 1fr 10px;
       grid-template-columns: 10px 1fr 10px;
-  -ms-grid-rows: 200px 10px 200px 10px 200px;
-      grid-template-rows: 200px 10px 200px 10px 200px;
-      grid-template-areas: "article-intro article-intro article-intro" ". . ." ". article-text ." ". . ." ". article-recommendations .";
+  -ms-grid-rows: 200px 10px 200px 10px auto;
+      grid-template-rows: 200px 10px 200px 10px auto;
+      grid-template-areas: "article-intro article-intro article-intro" ". . ." ". article-text ." ". . ." ". article-recommendations-area .";
 }
 
 .article-intro {
@@ -149,28 +149,40 @@ body {
   grid-area: article-text;
 }
 
-.article-recommendations {
+.article-recommendations-area {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
-  grid-area: article-recommendations;
-  height: 100%;
+  grid-area: article-recommendations-area;
+  width: 100%;
+}
+
+.article-recommendations-area__title {
+  text-align: center;
+}
+
+.article-recommendations {
+  height: auto;
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (200px)[3];
-      grid-template-rows: repeat(3, 200px);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
 }
 
 .article-recommendations .article-recommendation {
   padding: 5px;
+  height: 100%;
 }
 
 .article-recommendations .article-recommendation img {
-  height: 60%;
+  height: 240px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .article-recommendations .article-recommendation__info {
-  height: 40%;
+  height: 140px;
   background-color: #ff8c42;
 }
 

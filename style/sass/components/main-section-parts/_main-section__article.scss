@@ -1,13 +1,13 @@
 .article {
 	display: grid;
 	grid-template-columns: 10px 1fr 10px;
-	grid-template-rows: 200px 10px 200px 10px 200px;
+	grid-template-rows: 200px 10px 200px 10px auto;
 	grid-template-areas:
 		"article-intro article-intro article-intro"
 		". . ."
 		". article-text ."
 		". . ."
-		". article-recommendations .";
+		". article-recommendations-area .";
 
 	&-intro {
 		grid-area: article-intro;
@@ -26,30 +26,34 @@
 	}
 
 	&-recommendations-area {
-		// width: 100%;
+		grid-area: article-recommendations-area;
+		width: 100%;
+
+		&__title {
+			text-align: center;
+		}
 	}
 
 	&-recommendations {
-		grid-area: article-recommendations;
-		height: 100%;
+		height: auto;
 		width: 100%;
 		display: grid;
 		// grid-template-columns: repeat(1, 100%);
-		grid-template-rows: repeat(3, 200px);
+		grid-template-rows: repeat(3, 1fr);
 
 		.article-recommendation {
 			padding: 5px;
-			// height: 100%;
+			height: 100%;
 			// width: 100%;
 
 			img {
-				height: 60%;
-				// width: 100px;
-				// object-fit: cover;
+				height: 240px;
+				width: 100%;
+				object-fit: cover;
 			}
 
 			&__info {
-				height: 40%;
+				height: 140px;
 				background-color: $mango-tango;
 			}
 		}
