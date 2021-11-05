@@ -122,8 +122,8 @@ body {
   display: grid;
   -ms-grid-columns: 10px 1fr 10px;
       grid-template-columns: 10px 1fr 10px;
-  -ms-grid-rows: 200px 10px auto 10px auto 10px;
-      grid-template-rows: 200px 10px auto 10px auto 10px;
+  -ms-grid-rows: auto 10px auto 10px auto 10px;
+      grid-template-rows: auto 10px auto 10px auto 10px;
       grid-template-areas: "article-intro article-intro article-intro" ". . ." ". article-text ." ". . ." ". article-recommendations-area ." ". . .";
 }
 
@@ -134,9 +134,18 @@ body {
   grid-area: article-intro;
   height: 100%;
   width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #f9fafc;
 }
 
-.article-intro__img {
+.article-intro__image {
+  height: 300px;
+  width: 100%;
+}
+
+.article-intro__image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -145,10 +154,39 @@ body {
 
 .article-intro__title {
   position: absolute;
+  margin-top: 40px;
+}
+
+.article-intro__title h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.article-intro__title h2 {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.article-intro__author-info {
+  position: absolute;
+  margin: 180px 0px 0px;
+  left: calc(50% - 31px);
 }
 
 .article-intro__author-info img {
+  height: 70%;
+  width: 70%;
   border-radius: 50%;
+}
+
+.article-intro__author-info h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.article-intro__author-info h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .article-text-container {
@@ -170,7 +208,29 @@ body {
 
 .article-text {
   width: 96%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+.article-text__main-information {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.article-text__detailed-info--first {
+  margin-bottom: 16px;
+}
+
+.article-text__related-content {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #ff8c42;
+}
+
+.article-text__detailed-info--second {
+  margin-bottom: 20px;
 }
 
 .article-recommendations-area {
@@ -186,6 +246,7 @@ body {
   font-family: "Oswald", sans-serif;
   margin-bottom: 18px;
   text-transform: uppercase;
+  color: #ff8c42;
 }
 
 .article-recommendations {
