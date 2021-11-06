@@ -272,9 +272,38 @@ body {
 }
 
 .article-recommendations .article-recommendation__info {
-  height: 120px;
+  height: auto;
+  padding: 0px 20px;
   border-radius: 0px 0px 6px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+  color: #e8ebf0;
   background-color: #ff8c42;
+}
+
+.article-recommendations .article-recommendation__info--title {
+  margin-top: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.article-recommendations .article-recommendation__info--sample {
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.article-recommendations .article-recommendation__info span {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 .footer {
