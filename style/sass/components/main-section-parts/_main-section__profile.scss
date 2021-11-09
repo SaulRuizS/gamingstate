@@ -1,0 +1,77 @@
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// justify-content: center;
+	font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+
+	h2 {
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+
+	h3 {
+		font-size: 0.8rem;
+	}
+
+	&__pic {
+		img {
+			border-radius: 34%;
+		}
+	}
+
+	&__intro {
+		text-align: center;
+
+		h2 {
+			// font-size: 1.4rem;
+			color: $mango-tango;
+		}
+
+		h3 {
+			// font-size: 0.8rem;
+		}
+	}
+
+	button {
+		width: auto;
+		height: 24px;
+		padding: 4px 10px;
+		border-radius: 12px;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: "Oswald", sans-serif;
+	}
+
+	&__stats {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 70%;
+		height: 50px;
+		border-radius: 14px;
+		background-color: $light-gray;
+	}
+
+	&__about {
+	}
+
+	&__location {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 70%;
+		height: 50px;
+		border-radius: 14px;
+		background-color: $light-gray;
+	}
+
+	&__photos {
+		width: 70%;
+		height: auto;
+		border-radius: 14px;
+		background-color: $light-gray;
+	}
+}
