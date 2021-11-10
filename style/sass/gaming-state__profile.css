@@ -142,22 +142,29 @@ body {
   font-size: 0.8rem;
 }
 
+.profile__pic {
+  margin-bottom: 4px;
+}
+
 .profile__pic img {
   border-radius: 34%;
 }
 
 .profile__intro {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .profile__intro h2 {
   color: #ff8c42;
+  margin-bottom: 4px;
 }
 
 .profile button {
   width: auto;
   height: 24px;
   padding: 4px 10px;
+  margin-bottom: 20px;
   border-radius: 12px;
   text-transform: uppercase;
   text-align: center;
@@ -176,8 +183,17 @@ body {
           justify-content: center;
   width: 70%;
   height: 50px;
+  margin-bottom: 20px;
   border-radius: 14px;
   background-color: #e8ebf0;
+}
+
+.profile__about {
+  margin-bottom: 20px;
+}
+
+.profile__about h2 {
+  color: #ff8c42;
 }
 
 .profile__location {
@@ -192,15 +208,67 @@ body {
           justify-content: center;
   width: 70%;
   height: 50px;
+  margin-bottom: 20px;
   border-radius: 14px;
   background-color: #e8ebf0;
 }
 
 .profile__photos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto (80px)[4] 20px;
+      grid-template-rows: auto repeat(4, 80px) 20px;
+  -ms-grid-columns: 1fr (80px)[2] 1fr;
+      grid-template-columns: 1fr repeat(2, 80px) 1fr;
+      grid-template-areas: ". title title ." ". first first ." ". first first ." ". second second ." ". third fourth ." ". . . .";
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 70%;
   height: auto;
+  margin-bottom: 30px;
   border-radius: 14px;
   background-color: #e8ebf0;
+}
+
+.profile__photos h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  padding: 5px 0px;
+}
+
+.profile__photos img {
+  border-radius: 8px;
+}
+
+.profile__photos .img-first {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: first;
+}
+
+.profile__photos .img-second {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: second;
+}
+
+.profile__photos .img-third {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: third;
+}
+
+.profile__photos .img-fourth {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: fourth;
 }
 
 .footer {
