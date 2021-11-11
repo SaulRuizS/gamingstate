@@ -163,12 +163,14 @@ body {
 .profile button {
   width: auto;
   height: 24px;
-  padding: 4px 10px;
+  padding: 0px 10px;
   margin-bottom: 20px;
   border-radius: 12px;
+  border-width: 0px;
   text-transform: uppercase;
   text-align: center;
   font-family: "Oswald", sans-serif;
+  background-color: #e8ebf0;
 }
 
 .profile__stats {
@@ -186,6 +188,10 @@ body {
   margin-bottom: 20px;
   border-radius: 14px;
   background-color: #e8ebf0;
+}
+
+.profile__stats-followers, .profile__stats-following, .profile__stats-articles {
+  margin: 0px 20px;
 }
 
 .profile__about {
