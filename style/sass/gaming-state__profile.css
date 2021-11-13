@@ -148,6 +148,8 @@ body {
 
 .profile__pic img {
   border-radius: 34%;
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.6);
 }
 
 .profile__intro {
@@ -171,6 +173,8 @@ body {
   text-align: center;
   font-family: "Oswald", sans-serif;
   background-color: #e8ebf0;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .profile__stats {
@@ -188,6 +192,8 @@ body {
   margin-bottom: 20px;
   border-radius: 14px;
   background-color: #e8ebf0;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .profile__stats-followers, .profile__stats-following, .profile__stats-articles {
@@ -217,16 +223,18 @@ body {
   margin-bottom: 20px;
   border-radius: 14px;
   background-color: #e8ebf0;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .profile__photos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto (80px)[4] 20px;
-      grid-template-rows: auto repeat(4, 80px) 20px;
-  -ms-grid-columns: 1fr (80px)[2] 1fr;
-      grid-template-columns: 1fr repeat(2, 80px) 1fr;
-      grid-template-areas: ". title title ." ". first first ." ". first first ." ". second second ." ". third fourth ." ". . . .";
+  -ms-grid-rows: auto (120px)[4] 20px;
+      grid-template-rows: auto repeat(4, 120px) 20px;
+  -ms-grid-columns: 1fr 110px 10px 110px 1fr;
+      grid-template-columns: 1fr 110px 10px 110px 1fr;
+      grid-template-areas: ". title title title ." ". first first first ." ". first first first ." ". second second second ." ". third . fourth ." ". . . . .";
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -236,32 +244,37 @@ body {
   margin-bottom: 30px;
   border-radius: 14px;
   background-color: #e8ebf0;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .profile__photos h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: title;
   padding: 5px 0px;
 }
 
 .profile__photos img {
   border-radius: 8px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .profile__photos .img-first {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: first;
 }
 
 .profile__photos .img-second {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  -ms-grid-column-span: 3;
   grid-area: second;
 }
 
@@ -273,7 +286,7 @@ body {
 
 .profile__photos .img-fourth {
   -ms-grid-row: 5;
-  -ms-grid-column: 3;
+  -ms-grid-column: 4;
   grid-area: fourth;
 }
 
