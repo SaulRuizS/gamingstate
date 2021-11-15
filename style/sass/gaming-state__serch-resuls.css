@@ -117,6 +117,26 @@ body {
   color: #ff8c42;
 }
 
+.search-results__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  background-color: #ff8c42;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ff8c42), color-stop(30%, #ff8c42), to(#f9fafc));
+  background-image: linear-gradient(0deg, #ff8c42 0%, #ff8c42 30%, #f9fafc 100%);
+}
+
+.search-results__bar .bar {
+  border-width: 0px;
+}
+
 .footer {
   height: 200px;
   width: 100%;
