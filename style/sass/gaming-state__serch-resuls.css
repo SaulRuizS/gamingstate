@@ -122,14 +122,20 @@ body {
 }
 
 .search-results h2,
-.search-results h4 {
+.search-results h3 {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
 }
 
-.search-results h4 {
+.search-results h3 {
   font-size: 1.2rem;
+}
+
+.search-results p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .search-results__bar {
@@ -154,6 +160,7 @@ body {
   width: 240px;
   border-width: 0px;
   border-radius: 15px;
+  padding: 0px 10px;
 }
 
 .search-results .results__summary {
@@ -168,7 +175,7 @@ body {
           align-items: center;
   width: 100%;
   height: 50px;
-  padding: 0px 10px;
+  padding: 0px 20px;
 }
 
 .search-results .results__summary-text {
@@ -194,8 +201,13 @@ body {
           box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
-.search-results .results__summary-filter h4 {
-  margin-right: 6px;
+.search-results .results__summary-filter a {
+  text-decoration: none;
+  color: #1e1f24;
+}
+
+.search-results .results__summary-filter a i {
+  margin: 0px 4px;
 }
 
 .search-results .results__items {
@@ -208,7 +220,7 @@ body {
 }
 
 .search-results .results__items-link {
-  padding: 10px;
+  padding: 20px;
 }
 
 .search-results .results__items-link img {
@@ -217,6 +229,54 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px 6px 0px 0px;
+}
+
+.search-results .results__items-link-container {
+  -webkit-box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 6px 6px;
+}
+
+.search-results .results__items-link-container--noimg {
+  -webkit-box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 8px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.search-results .results__items-link__text {
+  padding: 10px;
+}
+
+.search-results .results__items-link__text .type {
+  color: #ff8c42;
+}
+
+.search-results .results__items-link__socials {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 30px;
+  border-top: 1px solid #e8ebf0;
+}
+
+.search-results .results__items-link__socials div {
+  margin: 0px 10px;
+}
+
+.search-results .results__items-link__socials div h4 {
+  font-size: 1rem;
+  color: #696d7d;
+}
+
+.search-results .results__items-link__socials div h4 i {
+  margin: 0px 6px;
 }
 
 .footer {
